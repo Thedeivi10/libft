@@ -6,7 +6,7 @@
 /*   By: davigome <davigome@studen.42malaga.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/24 22:08:21 by davigome          #+#    #+#             */
-/*   Updated: 2025/01/20 19:11:21 by davigome         ###   ########.fr       */
+/*   Updated: 2024/12/29 11:40:06 by davigome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
@@ -90,5 +91,9 @@ char	*ft_strchr_g(char *s, int c);
 char	*ft_strjoin_g(char *s1, char *s2);
 size_t	ft_strlen_g(char *s);
 char	*ft_clean(char *str);
+
+// MADE DURING PROJECTS THAT I SEE USEFUL //
+void	ft_free_matrix(char	**matrix);
+void	ft_cpy_int_list(int *src, int *dst, size_t	lenght);
 
 #endif
