@@ -6,12 +6,11 @@
 /*   By: davigome <davigome@studen.42malaga.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 10:34:23 by davigome          #+#    #+#             */
-/*   Updated: 2024/11/17 08:38:00 by davigome         ###   ########.fr       */
+/*   Updated: 2025/01/22 15:06:11 by davigome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 char	*ft_clean(char *str)
 {

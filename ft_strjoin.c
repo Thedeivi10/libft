@@ -6,26 +6,12 @@
 /*   By: davigome <davigome@studen.42malaga.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 13:12:15 by davigome          #+#    #+#             */
-/*   Updated: 2024/12/28 20:49:32 by davigome         ###   ########.fr       */
+/*   Updated: 2025/01/22 15:05:37 by davigome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*Nombre de función
-ft_strjoin
-Prototipo char *ft_strjoin(char const *s1, char const *s2);
-Archivos a entregar
--
-Parámetros s1: La primera string.
-s2: La string a añadir a ’s1’.
-Valor devuelto La nueva string.
-NULL si falla la reserva de memoria.
-Funciones autorizadas
-malloc
-Descripción Reserva (con malloc(3)) y devuelve una nueva
-string, formada por la concatenación de ’s1’ y
-’s2’.*/
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*dst;
