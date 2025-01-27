@@ -6,7 +6,7 @@
 /*   By: davigome <davigome@studen.42malaga.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 13:12:15 by davigome          #+#    #+#             */
-/*   Updated: 2025/01/27 21:19:14 by davigome         ###   ########.fr       */
+/*   Updated: 2025/01/27 21:23:13 by davigome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = -1;
 	if (!s1 && !s2)
 		return (0);
+	
 	dst = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!dst)
 		return (0);
