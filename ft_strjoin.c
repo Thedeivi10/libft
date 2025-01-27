@@ -6,7 +6,7 @@
 /*   By: davigome <davigome@studen.42malaga.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 13:12:15 by davigome          #+#    #+#             */
-/*   Updated: 2025/01/27 21:23:13 by davigome         ###   ########.fr       */
+/*   Updated: 2025/01/27 21:29:36 by davigome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,20 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*dst;
 	int		i;
 	int		j;
+	int		len_1;
+	int		len_2;
 
 	i = -1;
 	j = -1;
-	if (!s1 && !s2)
-		return (0);
-	
-	dst = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!s1)
+        len_1 = 0;
+	else
+		len_1 = ft_strlen(s1);
+    if (!s2)
+        len_2 = 0;
+	else
+		len_2 = ft_strlen(s2);
+	dst = malloc(len_1 + len_2 + 1);
 	if (!dst)
 		return (0);
 	while (s1[++i] && s1)
