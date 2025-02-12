@@ -6,7 +6,7 @@
 /*   By: davigome <davigome@studen.42malaga.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 10:33:02 by davigome          #+#    #+#             */
-/*   Updated: 2024/12/28 11:55:30 by davigome         ###   ########.fr       */
+/*   Updated: 2025/02/12 18:36:14 by davigome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ char	*ft_strjoin_g(char *s1, char *s2)
 	while (s2[++j])
 		dst[i + j] = s2[j];
 	dst [i + j] = 0;
+	free(s1);
+	free(s2);
 	return (dst);
 }
 
